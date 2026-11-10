@@ -1,0 +1,57 @@
+/* Challenge: Color h1 Blue */
+
+/* CSS element selector */
+h1{
+    color:blue;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color:black;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color:black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align:center;
+}
+
+/* This is an ID selector - hashtag for ID*/
+#paragraph_one {
+    color:red;
+}
+
+#paragraph_two {
+    color:purple;
+}
+
+#paragraph_three {
+    color:blue;
+}
+
+/* This is a class selector - periods for classes */
+.more_rats {
+    color:chocolate;
+}
+
+/* Combinator selectors */
+p.more_rats {
+    color:chocolate;
+}
+
+/* Decendency selector */
+div p.more_rats {
+    color:chartreuse;
+}
+
+p span {
+    font-weight: bold;
+}

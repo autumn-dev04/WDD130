@@ -1,0 +1,76 @@
+/* Add your CSS here to style the photography portfolio*/
+
+/* Go here to get fonts: https://fonts.google.com/*/
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Lavishly+Yours&display=swap');
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/
+
+body {
+    background: black;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lavishly Yours';
+    font-size: 3em;
+    text-align: center;
+    color: gold;
+}
+
+h2 {
+    font-family: 'Gabriela';
+    text-align: center;
+    margin-top: 0;
+    color: green;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 50px;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-align: center;
+    color: gold;
+    text-decoration: none;
+    line-height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    background: green;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    background: gold;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 1200px;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+    gap: 15px;
+}
+
+img {
+    max-width: 200px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+footer {
+    color: white;
+}
