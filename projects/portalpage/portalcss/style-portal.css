@@ -296,3 +296,32 @@ footer {
     border: solid, #381d03, 10px;
     border-radius: 10px;
 }
+
+/*Archive Page*/
+#contentarchive {
+    text-align: center;
+}
+
+#mainarchive {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+}
+
+#atitle {
+    grid-column: 2;
+}
+
+#apurpose {
+    grid-column: 1/4;
+}
+
+#birthday {
+    grid-column: 1;
+}
+
+#rcs {
+    max-width: 300px;
+    border: solid, #381d03, 10px;
+    border-radius: 10px;
+}
