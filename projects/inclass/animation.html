@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+
+            transition: width 5s,
+                        background-color 5s;
+        }
+
+        div:hover {
+            width: 600px;
+            background-color: lightseagreen;
+        }
+
+        section {
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+            animation-name: bounceAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounceAnimation {
+            0% {margin-top: 0;}
+            25% {margin-top: 10px;}
+            50% {margin-top: 30px;}
+            75% {margin-top: 10px;}
+            100% {margin-top: 0;}
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <section></section>
+</body>
+</html>
