@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 101</title>
+    <style>
+        /*This is CSS land*/
+    </style>
+</head>
+<body>
+    <!--This is HTML land-->
+    <h1>Javascript 101</h1>
+    <button>Press me!</button>
+
+    <script>
+        //you are in javascript land
+        let name = "Autumn Goodbaudy";
+        //print to console
+        console.log(name);
+        // see the page with the document object
+        document.querySelector("h1").style.color = "blue";
+        document.querySelector("button").addEventListener("click", e => {
+            
+            //if the color is blue, change to red
+            //if the color is red, change to blue
+            let heading = document.querySelector("h1");
+            let currentColor = heading.style.color;
+            
+            if(currentColor === "blue") {
+                heading.style.color = "red";
+            }
+            else if (currentColor === "red") {
+                heading.style.color = "blue";
+            }
+        });
+    </script>
+</body>
+</html>
